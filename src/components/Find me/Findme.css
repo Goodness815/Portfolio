@@ -1,0 +1,136 @@
+.find-body {
+  overflow: hidden;
+}
+.find-case {
+  padding: 0px 30px;
+  margin: 100px 0px;
+}
+.find-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.find-title h1 {
+  font-family: Proza Libre;
+  font-size: 43px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 100px 0px;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+}
+.find-title h1 span {
+  color: black;
+}
+.find-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-items: center;
+}
+.find-grid a {
+  text-decoration: none;
+  transition: 0.5s ease-in;
+}
+.find-item {
+  height: 100px;
+  width: 350px;
+  max-width: 350px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.find-grid a:hover {
+  transform: translateY(-20px);
+  transition: 1s ease;
+}
+.inner-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.inner-text {
+  text-align: right;
+}
+.inner-text a {
+  font-family: Proza Libre;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  color: #fff;
+  text-decoration: none;
+}
+.inner-text span {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #8f8b8b;
+}
+
+.find-icon {
+  font-size: 25px;
+  color: #fff;
+}
+@media screen and (max-width: 1227px) {
+  .find-item {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .find-item {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .find-item {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .find-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .find-item {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .find-item {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .find-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .find-item {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .find-grid a{
+    width: 100%;
+    display: inline-block;
+  }
+  .find-item {
+    width: 100%;
+  }
+  .find-case {
+    margin: 0px auto;
+  }
+}

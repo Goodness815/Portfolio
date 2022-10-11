@@ -1,0 +1,135 @@
+.contact-case {
+  padding: 0px 30px;
+  margin: 100px 0px;
+}
+.contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contact-title h1 {
+  font-family: Proza Libre;
+  font-size: 43px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin: 100px 0px;
+  text-shadow: -1px 1px 0 #fca311, 1px 1px 0 #fca311, 1px -1px 0 #fca311,
+    -1px -1px 0 #fca311;
+}
+.contact-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form form {
+  width: 75%;
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form form span {
+  color: #fca311;
+  margin-top: 20px;
+  font-family: Proza Libre;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+.contact-form form input {
+  width: 100%;
+  border: 0;
+  height: 30px;
+  margin: 20px 0px;
+  border-bottom: 2px solid #fca311 !important;
+  color: #fca311;
+  font-family: Proza Libre;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  background-color: black;
+  transition: 0.5s ease;
+}
+.contact-form form input::placeholder {
+  color: #fca311;
+}
+.contact-form form input:focus {
+  outline: none;
+  border-bottom: 2px solid #ffca75 !important;
+  transition: 1s ease;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-flex input:first-of-type {
+  margin-right: 50px;
+}
+.contact-btn button {
+  border: none;
+  border: 1px solid #fca311;
+  color: #fca311;
+  font-family: Proza Libre;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  padding: 0px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: black;
+  transition: 1.2s ease;
+}
+.contact-btn button:hover {
+  background-color: #fca311;
+  color: black;
+  transition: 1.2s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-title h1{
+    margin: 50px 0px;
+  }
+  .contact-form form {
+    width: 100%;
+  }
+  .contact-case {
+    padding: 0px 20px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+}

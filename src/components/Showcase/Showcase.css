@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.showcase {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+.text-flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-flex h2 {
+  color: #fca311;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.2em;
+}
+.text-flex span {
+  color: #ffffff;
+}
+.inner-text-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-text-flex h1 {
+  margin: 0px 20px;
+  font-family: Proza Libre;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 0em;
+  color: black;
+  text-shadow: -1px 1px 0 #fca311, 1px 1px 0 #fca311, 1px -1px 0 #fca311,
+    -1px -1px 0 #fca311;
+}
+
+.scroll-rotate {
+  position: absolute;
+  bottom: 7%;
+  left: -2%;
+  z-index: 100;
+  transform: rotate(-90deg);
+}
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-down span {
+  color: #ffffff;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.message-div {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fca311;
+  color: #fff !important;
+  border-radius: 50%;
+  transition: ease-in 0.5s;
+}
+.message-div:hover {
+  transition: ease-out 0.5s;
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  color: #fca311 !important;
+}
+
+.message-icon {
+  font-size: 28px;
+  transition: ease-in 0.5s;
+  color: #fff;
+}
+.message-icon:hover {
+  transition: ease-out 0.5s;
+  color: #fca311;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 100px;
+  font-weight: bold;
+  color: #fff;
+  height: 100px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: none;
+}
+.slider {
+  color: #fca311;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 100px;
+  box-sizing: border-box;
+  animation: slider 6s linear infinite;
+}
+.slider h1 {
+  font-family: Proza Libre;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 0em;
+  color: black;
+  text-shadow: -1px 1px 0 #fca311, 1px 1px 0 #fca311, 1px -1px 0 #fca311,
+    -1px -1px 0 #fca311;
+}
+@keyframes slider {
+  0% {
+    margin-top: -400px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  30% {
+    margin-top: -200px;
+  }
+  35% {
+    margin-top: 0px;
+  }
+  65% {
+    margin-top: 0px;
+  }
+  70% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .inner-text-flex h1 {
+    margin: 0px 20px;
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .inner-text-flex h1 {
+    margin: 0px 10px;
+    font-size: 50px;
+
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .inner-text-flex {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  .slider h1 {
+    font-size: 58px;
+    font-weight: 800;
+  }
+  .text-flex h2 {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .scroll-rotate {
+    bottom: 10%;
+    left: -8%;
+  }
+}
